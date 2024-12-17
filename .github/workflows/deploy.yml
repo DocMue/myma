@@ -17,6 +17,7 @@ jobs:
         key: ${{ secrets.KEY }}
         port: ${{ secrets.PORT }}
         script: |
+          echo "Test SSH connection"
           cd ${{ secrets.DIR }}
           git pull origin main && composer install && composer update && php artisan optimize
           php artisan config:clear
