@@ -7,7 +7,7 @@
                     <div class="card">
                         <div class="card-body p-4">
                             <div class="text-center mt-2">
-                                <h5>Selamat Datang</h5>
+                                <h5>Masuk</h5>
                                 <p class="text-muted">Silahkan Masuk terlebih dahulu</p>
                             </div>
                             <div class="p-2 mt-4">
