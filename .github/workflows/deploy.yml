@@ -2,16 +2,15 @@ name: Deploy to VPS
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
 
 jobs:
-  deploy:
+  first:
+    name: Pull from github
     runs-on: ubuntu-latest
-
     steps:
-    - name: Deploy via SSH
-      uses: appleboy/ssh-action@v0.1.8
+    - name: deploy myma - pulling
+      uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USER }}
