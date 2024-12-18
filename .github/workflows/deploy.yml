@@ -18,6 +18,7 @@ jobs:
         port: ${{ secrets.PORT }}
         script: |
           cd ${{ secrets.DIR }}
+          git reset --hard
           git pull origin main && composer install && composer update && php artisan optimize
           php artisan config:clear
           ./update_repo.sh
